@@ -3,11 +3,6 @@ MIT License
 Copyright (c) 2026 Fernando Garcia de la Cruz
 Copyright (c) 2026 David López-Ayala
 
-This repository is derived from Fernando Garcia de la Cruz's detector-models
-(https://github.com/fergarciadlc/detector-models), released under the MIT
-License, and has since diverged from it. The notice above covers both the
-original work and the modifications.
-
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
