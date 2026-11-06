@@ -1,0 +1,19 @@
+# Training data for CNN Clean (paper, Sec. 4.1.1).
+#   human (real): FMA-medium                  https://github.com/mdeff/fma
+#   AI    (fake): SONICS, Suno v3.5 subset    https://huggingface.co/datasets/awsaf49/sonics
+# Paths are as seen inside the Docker container: $DATASETS_DIR on the host is
+# mounted at /datasets (see .env.example and the Makefile).
+dataset:
+  name: fma_medium_sonics_suno_v35
+  description: "Clean foreground music: FMA-medium (human) vs SONICS Suno v3.5 (AI)"
+
+  paths:
+    real: /datasets/fma_medium
+    fake: /datasets/sonics_suno_v35
+
+  format: mp3
+
+  split:
+    strategy: stratified
+    ratios: [0.70, 0.20, 0.10]   # train / val / test
+    seed: 123

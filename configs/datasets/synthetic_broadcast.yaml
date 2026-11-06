@@ -1,0 +1,19 @@
+# Training data for CNN Broadcast (paper, Sec. 4.1.2).
+# Same music as CNN Clean, rebuilt with scripts/build_synthetic_broadcast_dataset.py:
+# 70% of each class mixed with LibriSpeech train-clean-360 speech at a random
+# SNR in [-30, +30] dB, 30% left clean, all exported as mono 8 kHz MP3 at 40 kbps.
+# Paths are as seen inside the Docker container (host $DATASETS_DIR -> /datasets).
+dataset:
+  name: synthetic_broadcast
+  description: "Synthetic broadcast: FMA-medium / SONICS Suno v3.5 mixed with LibriSpeech speech (70% mixed, 30% clean)"
+
+  paths:
+    real: /datasets/synthetic_broadcast/Human
+    fake: /datasets/synthetic_broadcast/AI
+
+  format: mp3
+
+  split:
+    strategy: stratified
+    ratios: [0.70, 0.20, 0.10]   # train / val / test
+    seed: 123
