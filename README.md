@@ -1,5 +1,9 @@
 # BAMM: AI-generated music detection in real-world broadcast monitoring
 
+[![Dataset](https://img.shields.io/badge/Dataset-Zenodo-1682D4?style=for-the-badge&logo=zenodo&logoColor=white)](https://zenodo.org/records/23956690)
+[![Model weights](https://img.shields.io/badge/Model%20weights-Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/DaveLoay/bamm-cnn-detectors)
+[![Paper](https://img.shields.io/badge/Paper-arXiv-B31B1B?style=for-the-badge&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2608.07359)
+
 Code, model weights and evaluation scripts for the ISMIR 2026 paper
 
 > **Assessing AI-generated music detection in real-world broadcast monitoring**
@@ -29,7 +33,7 @@ BAMM holds 5,498 clips (3,009 AI, 2,489 human, 4 s to 60 s each) cut from TV cha
 worldwide that aired between January 2025 and March 2026. Each clip is an MP4 file whose audio is
 mono, 8 kHz AAC at about 42 kbps, the format of large-scale broadcast monitoring archives.
 
-**Download:** Zenodo, link coming soon.
+**Download:** [Zenodo, record 23956690](https://zenodo.org/records/23956690).
 
 After unpacking it looks like this:
 
